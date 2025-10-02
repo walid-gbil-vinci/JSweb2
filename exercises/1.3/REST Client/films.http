@@ -1,0 +1,20 @@
+### Read all drinks with File variable
+@baseUrl = http://localhost:3000
+GET {{baseUrl}}/films
+
+### Read a single drink
+GET {{baseUrl}}/films/3
+
+### Read all drinks cheaper or equal to 3 €
+GET {{baseUrl}}/films/?minimum-duration=112
+
+### Create a drink
+POST {{baseUrl}}/films
+Content-Type: application/json
+
+{
+    "title":"Harry poter 113",
+    "director":"Walid",
+    "duration":123,
+    "description":"eee"
+}
